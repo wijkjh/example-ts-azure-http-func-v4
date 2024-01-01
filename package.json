@@ -1,0 +1,28 @@
+{
+  "name": "ts-http-trigger-func-v4",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "npm run clean && tsc -w",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start",
+    "postinstall": "npx husky install",
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/node": "^18.x",
+    "@vitest/coverage-istanbul": "^1.1.1",
+    "husky": "^8.0.3",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "main": "dist/functions/*.js"
+}
