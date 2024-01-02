@@ -1,6 +1,6 @@
 # Example Azure function using Typescript
 
-This example Azure function is built using Typescript and uses the function programming model v4.
+This example Azure function is built using Typescript v5.3 and uses the function programming model v4.
 
 The example also includes unittests using vitest with code coverage.
 And the example adds conventional commit linting using husky.
