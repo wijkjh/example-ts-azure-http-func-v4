@@ -1,4 +1,13 @@
-# Types vs interfaces
+# Example Azure function using Typescript
+
+This example Azure function is built using Typescript and uses the function programming model v4.
+
+The example also includes unittests using vitest with code coverage.
+And the example adds conventional commit linting using husky.
+
+## Typescript notes
+
+### Types vs interfaces
 
 Beware of the fact that interfaces can be merged, which can have impredictable results.
 
